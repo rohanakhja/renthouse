@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+   /* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    /* overflow: hidden; */
+}
+
+/* variables */
+:root{
+    --navbar-height: 59px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 98px;
+}
+
+/* Navbar:logo and image */
+#logo{
+    margin: 23px 45px;
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+}
+#logo img{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+}
+/* Navbar:list styleing */
+
+#navbar ul{
+    /* border: 2px solid red; */
+    display: flex;
+    position: relative;
+    left: 37%;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li {
+    
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    /* border: 2px solid red; */
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+   color: #022539;
+   background-color: rgb(254, 188, 125);
+}
+hr{
+    border:1px solid #FEBC7D;
+    border-radius: 5px;
+}
+
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: left;
+}
+.column img{
+    /* border-radius: 6rem; */
+    /* width: 11%; */
+    /* margin-top: -3%;
+    
+    width: 50%; */
+    margin-top: 0%;
+    margin-left: 40%;
+}
+.row{
+    /* padding-left: 20%;
+    padding-top: 10%; */
+    margin-top: 0;
+    padding-top: 5%;
+    /* background-color: #000000; */
+}
+.column form{
+    /* padding: 14%; */
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    padding-top: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 50%;
+    border-radius: 2%;
+    background-color:  rgb(255, 229, 229);
+}
+/* .column form .row{
+    
+} */
+.column h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #000000;
+}
+.column .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 0%;
+    background: #fe8f27;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+   /* Three image containers (use 25% for four, and 50% for two, etc) */
+   .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<!-- <style>
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style> -->
+</head>
+<body>
+     <!-- this is navabr -->
+     <!-- <nav id="navbar">
+      <div id="logo">
+          <img src="images/logo-04.png" alt="PGligi">
+      </div>
+      <ul>
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">About Us</a></li>
+          <li class="item"><a href="#">Contact Us</a></li>
+          <li class="item"><a href="#">SignUp</a></li>
+          <li class="item"><a href="#">For Property Owners</a></li>
+      </ul>
+  </nav>
+  <hr> -->
+
+      <div class="row" >
+        <div class="column" >
+            
+                <img src="images/yyey-12.png" alt="rocket_contact" width="100%"/>
+            
+        </div>
+        <div class="column" >
+    
+        
+        <form method="post">
+            <h3>Contact Us</h3>
+            <p>You can share you querie or any issue which you are facing and we will try to solve your querie and  issues as fast as possible we dont want any problem form our users</p>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Name *" value="" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Email *" value="" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="number *" value="" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send " />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your querie *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+
+</div>
+      
+</body>
+</html>

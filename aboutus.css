@@ -1,0 +1,146 @@
+ /* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    /* overflow: hidden; */
+}
+
+/* variables */
+:root{
+    --navbar-height: 59px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 98px;
+}
+
+/* Navbar:logo and image */
+#logo{
+    margin: 23px 45px;
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+}
+#logo img{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+}
+/* Navbar:list styleing */
+
+#navbar ul{
+    /* border: 2px solid red; */
+    display: flex;
+    position: relative;
+    left: 37%;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li {
+    
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    /* border: 2px solid red; */
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+   color: #022539;
+   background-color: rgb(254, 188, 125);
+}
+hr{
+    border:1px solid #FEBC7D;
+    border-radius: 5px;
+}
+.section{
+    /* border: 2px solid red; */
+    display: flex;
+    flex: direction;
+    flex-direction: column;
+    
+}
+.section h1{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 7%;
+    font-size: 3em;
+}
+ .section img{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 60%;
+    position: relative;
+    left: 21em;
+    top: 10px;
+}
+.section .aboutcontent{
+    /* border: 2px solid red; */
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 100px;
+    flex-direction: column;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+/* footer styling */
+footer{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 175%;
+    height: 23%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #022539;
+    
+}
+footer .left{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 25px 43px;
+}
+footer .left a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+}
+footer .right{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 25px 43px 25px 0px;
+}
+footer .right a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
